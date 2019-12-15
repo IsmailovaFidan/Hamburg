@@ -1,0 +1,71 @@
+﻿@using Hamburg.Models
+@model Hamburg.ViewModel.Default.DefaultViewModel
+
+<div class="content-main gallery_main">
+
+    <div class="gallery-main-inner">
+
+        <div class="col-md-12 gallery_title_main">
+            <div class="gallery_title">
+                <p style="font-size:4vw;"><b>Uğurlarımızdan bir hissə</b></p>
+                <h4>...Davam edir</h4>
+            </div><br style="clear:both;" />
+        </div>
+
+        <div id="content" class="gallery-images-container" data-tilt>
+            <div class="box-gutter"></div>
+            <div class="box-sizer"></div>
+            @foreach(var item in Model.galleryImg)
+            {
+        <div class="box">
+            <a href="@item.Img"><img alt="Agra picture" src="@item.Img"></a>
+        </div>
+            }
+            
+            @*<div class="box">
+                <a href="images/11.jpg"><img alt="Agra picture" src="images/11.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/13.jpg"><img alt="Agra picture" src="images/13.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/14.jpg"><img alt="Agra picture" src="images/14.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/50.jpg"><img alt="Agra picture" src="images/50.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/51.jpg"><img alt="Agra picture" src="images/51.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/52.jpg"><img alt="Agra picture" src="images/52.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/54.jpg"><img alt="Agra picture" src="images/54.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/56.jpg"><img alt="Agra picture" src="images/56.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/57.jpg"><img alt="Agra picture" src="images/57.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/60.jpg"><img alt="Agra picture" src="images/60.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/61.jpg"><img alt="Agra picture" src="images/61.jpg"></a>
+            </div>
+            <div class="box">
+                <a href="images/59.jpg"><img alt="Agra picture" src="images/59.jpg"></a>
+            </div>*@
+
+        </div>
+
+        <!--  <div class="row text-center view_more_main">
+             <a href="#" class="btn view_more">view more</a>
+          </div>-->
+
+    </div>
+
+</div>
+                

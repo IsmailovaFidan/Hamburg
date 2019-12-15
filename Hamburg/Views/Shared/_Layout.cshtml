@@ -1,0 +1,131 @@
+﻿@using Hamburg.Models
+@model Hamburg.ViewModel.Default.DefaultViewModel
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <title>Hamburg Academy</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/hamburg.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hamburg Academy, Alman dili ve Almaniya tehsil merkezi">
+    <meta name="keywords" content="Alman dili,Alman dili kursu,Alman kursu,Almaniyada is,Almaniyada tehsil,Almaniyada rezidentura,Azerbaycanda nomre 1 Alman dili kursu">
+    <meta name="Həmidzadə Natiq" content="">
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="main-page">
+
+                    <aside class="main-navigation">
+                        <div class="main-menu">
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-2-1 block-width-full home">
+                                    <a href="@Url.Action("Index","Home")" class="block-keep-ratio__content  main-menu-link">
+                                        <span class="main-menu-link-text">
+                                            Əsas səhifə
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-left  about-main">
+                                    <a href="@Url.Action("About","Home")" class="main-menu-link about block-keep-ratio__content flexbox-center">
+                                        <i class="fa fa-user fa-4x main-menu-link-icon"></i>
+                                        Haqqımızda
+                                    </a>
+                                </div>
+
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-right  contact-main">
+                                    <a href="@Url.Action("Contact","Home")" class="main-menu-link contact block-keep-ratio__content flexbox-center">
+                                        <i class="fa fa-envelope-o fa-4x main-menu-link-icon"></i>
+                                        Əlaqə
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-1-1 block-keep-ratio-md-2-1 block-width-full gallery">
+                                    <a href="@Url.Action("Gallery","Home")" class="main-menu-link  block-keep-ratio__content">
+                                        <span class="main-menu-link-text">
+                                            Qalereya
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- .mauris -->
+                        </div>
+                    </aside>
+                </div> <!-- main-menu -->
+
+                @RenderBody()
+                <div data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="2500">
+                    <div class="container-fluid footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.361176797225!2d49.83157054140938!3d40.39377128243433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db821b0dae3%3A0xe4f6e9fc934d8160!2sHamburg+Academy+Alman+dili+Merkezi!5e0!3m2!1sru!2s!4v1554293516915!5m2!1sru!2s" allowfullscreen class="map"></iframe>
+                            </div>
+
+                            <div class="col-md-3">
+                                <p style="color:white;font-size:1.5vw;">Ünvan:@Model.contactPage.Address</p>
+                                <a href="+1234567890" class="contact-info-link">
+                                    <i class="fa fa-mobile contact-fa" style="color:white;font-size:1.5vw;"></i><span style="color:white;font-size:1.5vw;">@Model.contactPage.Number </span>
+                                </a><br /><br />
+                                <a href="https://www.instagram.com/hamburg_academy_alman_dili/" target="_blank">
+                                    <span><i class="fa fa-instagram social-icon instagram_icon"></i></span>
+                                </a>
+                                <a href="https://www.facebook.com/Hamburgacademy/" target="_blank">    <span><i class="fa fa-facebook social-icon facebook_icon"></i></span> </a>
+                            </div>
+
+                            <div class="col-md-3">
+                                <ul style="list-style-type:none;font-size:2vw;">
+                                    <li class="ul_li"><a href="index.html">Əsas səhifə </a></li>
+                                    <li class="ul_li"><a href="about.html">Haqqımızda </a></li>
+                                    <li class="ul_li"><a href="gallery.html">Qalereya </a></li>
+                                    <li class="ul_li"><a href="contact.html">Əlaqə </a></li>
+                                </ul>
+
+                                <div style="margin-top:10%;margin-left:50%;">
+                                    <p style="color:white;">
+                                        <br>Copyright &copy; 2019
+
+                                        <br>Design:&nbsp by<span style="color:aqua;">&nbsp <i>Natiq</i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- JavaScript -->
+        <script src="~/js/jquery-1.11.3.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+
+        <script>
+            AOS.init({
+                duration: 3000,
+            })
+        </script>
+</body>
+</html>
+

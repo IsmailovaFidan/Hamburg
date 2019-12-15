@@ -1,0 +1,101 @@
+﻿@using Hamburg.Models
+@model Hamburg.ViewModel.Default.DefaultViewModel
+
+    <div class="content-main contact-content">
+        <div class="contact-content-upper">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="gallery_title">
+                        <h3>Hamburg Academy</h3>
+                        <h4>Bizimlə Əlaqə</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 contact_left">
+                    <form class="form-horizontal" method="post" action="#">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ad..." value="">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Soyad..." value="">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email..." value="">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Mövzu..." value="">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" name="message" placeholder="Mesajınız..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input id="submit" name="submit" type="submit" value="Göndər" class="btn view_more btn-submit">
+                        </div>
+
+                    </form>
+                </div> <!-- .contact-left -->
+
+                <div class="col-sm-12 col-md-6 contact_right">
+
+
+
+                    <div class="col-md-12 contact_info">
+                        <!-- <a href="mailto:info@company.com" class="contact-info-link">
+                         <i class="fa fa-envelope contact-fa"></i>info@company.com
+                     </a>-->
+                        <br />
+                        <a href="+994514612172" class="contact-info-link">
+                            <i class="fa fa-mobile contact-fa"></i>@Model.contactPage.Number
+                        </a><br />
+
+                        <div style="background-image:url(images/bg5.jpg);background-size:cover;color:#ff9933;text-align:center;height:250px;">
+                            <div>
+                                <h2>Kursun qrafiki</h2>
+                            </div><hr>
+                            <div>
+                                <div style="font-size:22px;">
+                                    <strong>@Model.contactPage.DescOne</strong>
+
+                                </div><br><br>
+                                <div style="font-size:22px;">
+                                    <strong>@Model.contactPage.DescTwo</strong>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--  <a href="+0987654321" class="contact-info-link">
+                          <i class="fa fa-phone contact-fa"></i>(+994) 051 4612172
+                      </a><br/>-->
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <a href="https://www.instagram.com/hamburg_academy_alman_dili/" target="_blank">    <span><i class="fa fa-instagram social-icon instagram_icon"></i></span></a>
+
+
+                        <a href="https://www.facebook.com/Hamburgacademy/" target="_blank">    <span><i class="fa fa-facebook social-icon facebook_icon"></i></span> </a>
+                    </div>
+
+                </div> <!-- .contact_right -->
+
+            </div> <!-- .row -->
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>Ünvan:@Model.contactPage.Address</p>
+                <div id="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.361176797225!2d49.83157054140938!3d40.39377128243433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307db821b0dae3%3A0xe4f6e9fc934d8160!2sHamburg+Academy+Alman+dili+Merkezi!5e0!3m2!1sru!2s!4v1554293516915!5m2!1sru!2s" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>

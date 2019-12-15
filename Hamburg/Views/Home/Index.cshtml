@@ -1,0 +1,149 @@
+﻿@using Hamburg.ViewModel.Default
+@model DefaultViewModel
+
+<div class="content-main">
+    <div class="row margin-b-30">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="banner-main-home">
+                <div class="banner-main-home-text">
+                    <div class="heading">
+                        <h1>@Model.homeTitle.Title</h1>
+                        <p>@Model.homeTitle.miniTitle</p>
+                    </div>
+                    <div class="desc">
+                        <p>@Model.homeTitle.Description</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row margin-b-30">
+        @foreach (var item in Model.homeCountry)
+        {
+
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="box london">
+                    <div class="box-icon">
+                        <img src="@item.Img" alt="Image" class="img-responsive">
+                    </div>
+                    <div class="info float-container">
+                        <div class="col-sm-12 london-title">
+                            <h3>@item.Name</h3>
+                        </div>
+                        <div data-aos="zoom-in">
+                            <p>@item.Description</p><hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        @*<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="box paris">
+                <div class="box-icon">
+                    <img src="images/germany.jpg" alt="Image" class="img-responsive">
+                </div>
+                <div class="info float-container">
+                    <div class="col-sm-12 london-title paris-title">
+                        <h3>Alman dili</h3>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <p>
+                            Alman dili öyrənməyin üstünlükləri.
+                            <ul>
+                                <li> Almaniya,Avstriya,İsveçrənin rəsmi dilidir </li>
+                                <li> Avropada ən cox danışılan 2ci dil Alman dilidir </li>
+                                <li> Dünyada 120 milyon insan Almanca danışır </li>
+                                <li>
+                                    8 ölkədə geniş İstifadə olunur
+                                    (Almaniya,Avstriya,İsveçrə,Belcika,Lüksemburg,
+                                    Lixteynşteyn,Polşa,Cexiya)
+                                </li>
+                                <li> Dünyada ən çox öyrənilən 3 dildən biridir </li>
+                                <li> Ən əsası Alman dili bilməklə Almaniya Universitetlərində ödənişsiz təhsil almaq və Almaniyada karyera qurmaq imkanları yüksəkdir. </li>
+                            </ul>
+                            Qeyd edək ki,hər il yüzlərlə həmvətənlilərimiz
+                            Almaniyaya təhsil almağa üz tutur və bu hər ötən ilə görə artmaqdadır.
+                            Almaniyada 367 Ali məktəbin
+                            298-i Dövlət universitet və ali peşə məktəbidir.
+                        </p><hr />
+                    </div>
+               
+                </div>
+            </div>
+        </div>*@
+    </div> <!-- row -->
+</div>
+						
+
+
+
+
+<div class="container" style="height:65vw;width:90vw;">
+    <div data-aos="fade-down-right">
+        <div style="background-image:url(images/edu.jpg);height:58vw;width:55vw;float:right;background-size:cover;
+								clip-path: polygon(0 0, 100% 0, 100% 100%, 64% 100%);shape-outside:polygon(0 0, 100% 0, 100% 100%, 64% 100%)">
+        </div>
+    </div>
+    <div data-aos="fade-down-left">
+        <div class="content">
+            <p style="color:#cc3300;border-left:5px aqua solid;font-size:2.6vw;">ALMANIYADA BAKALAVR TƏHSİLİ</p>
+            <p style="color:#fff;font-size:2vw;">
+                Almaniyadakı bakalavr təhsili digər ölkələrin bakalavr təhsilindən fərqlənir, o cümlədən Azərbaycandakı olan  bakalavrda fərqlənir. Almaniyada orta məktəb  12 və ya 13 illik olduğu halda, Azərbaycanda 11 illikdir. Bu baxımdan  Almaniyada bakalavr təhsili almaq istəyən Azərbaycanlı gənclər Azərbaycan universitetlərində ən azı 2 il bakalavr təhsili almalıdırlar ki, gedib Almaniyada Bakalavr təhsilinə başlaya bilsinlər. Burada 2 illik bakalavr təhsili alan tələbələr Almaniyada bakalavr təhsilinin yalnız 1-ci kursuna başlaya bilərlər. Almaniyada bakalavr təhsili iki dildə vardır, həm ingilis dilində, həm də alman dilində. Alman dilində təhsil almaq üçün TestDAF və ya digər uyğun imtahan vermək lazımdır. Əgər təhsilinizi  ingilis dilində alacaqsınızsa, siz TOEFL IBT və yaxud da IELTS imtahanı verməli olacaqsınız. Bu imtahanlarda birini verdikdən sonra sizin Almaniya universitetlərinə qəbul ola bilərsiniz.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container" style="height:55vw;width:90vw;margin-top:15%;">
+
+    <div data-aos="fade-down-left">
+        <div style="background-image:url(images/112.jpg);height:40vw;width:65vw;float:left;background-size:cover;
+									clip-path: polygon(77% 0, 42% 50%, 77% 100%, 0 100%, 0 0);shape-outside:polygon(77% 0, 42% 50%, 77% 100%, 0 100%, 0 0)">
+        </div>
+    </div>
+
+    <div data-aos="fade-down-right">
+        <div class="content">
+            <p style="color:#cc3300;border-right:5px aqua solid;font-size:2.6vw;"><b>Almaniyada Magistr təhsili</b></p>
+            <p style="color:#fff;font-size:2vw;">
+                Almaniyada bakalavr təhsili ilə yanaşı magistr təhsili də mövcuddur. Almaniyada da magistr təhsili almaq üçün bakalavr dərəcəsini bitirmək lazımdır. Magistr proqramları  həm ingilis, həm də alman dilində mövcuddur. Ümumilikdə magistr proqramlari 2 il davam edir. Amma 1 illik və yaxud da 1.5 illik proqramlar da mövcuddur. Təhsil almaq istədiyiniz ixtisasdan asılı olaraq ya Alman ya da İngilis dilininin mükəmməliyini yoxlayan imtahanın nəticələri tələb olunacaq. Almaniya texnologiya ,iqtisadiyyat və tibb sahəsi üzrə dünyada ən inkişaf etmiş sıralarda durur.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="height:80vw;width:90vw;margin-top:10%;">
+
+    <div data-aos="fade-down-right">
+        <div style="background-image:url(images/work1.jpg);height:57vw;width:75vw;float:right;background-size:cover;
+								clip-path: polygon(29% 50%, 100% 0, 100% 100%);shape-outside:polygon(29% 50%, 100% 0, 100% 100%)">
+        </div>
+    </div>
+
+    <div data-aos="fade-down-left">
+        <div class="content">
+            <p style="color:#cc3300;border-left:5px aqua solid;font-size:2.6vw;">ALMANİYADA PEŞƏ TƏHSİLİ</p>
+            <p style="color:#fff;font-size:2vw;">
+                Almaniyada Peşə təhsili “Ausbildung” adlanır. Peşə təhsilinin müddəti 2 ildən 3.5 ilə qədər davam edir və bir çox sahələri əhatə edir. Peşə təhsilinin digər təhsillərdən üstün cəhəti ondan ibarətdir ki, siz oxuduğunuz müddət ərzində 600-dan 900-a avroya qədər aylıq maaş qazana bilirsiniz. Peşə təhsili müddətində siz qəbul olunduğunuz şirkətin nəzdində praktiki, təhsil mərkəzlərində/məktəblərdə isə nəzəri biliklərə yiyələnirsiniz. Siz qəbul olduğunuz zaman şirkət sizinlə müqavilə bağlayır, bəzi hallarda qalacağınız yer belə şirkət tərəfindən təmin edilir.
+                Ən üstün cəhət ondan ibarətdir ki, vizaya müraciət edərkən hesabda pul göstərməyə ehtiyac qalmır. Qəbul olunduqdan sonra sizinlə bağlanmış müqavilədə sizin aylıq qazancınız və digər xərclərin qarşılanacağı qeyd olunur.<br><br>
+
+                Qəbul üçün lazım olunan sənədlər:<br>
+
+                &nbsp  -Attestat<br>
+                &nbsp -Alman dili biliyi B1/B2 səviyyədə<br><br><br>
+                <span style="color:#000">Qeyd:</span> İşlərin növlərindən asılı olaraq, sizdən əlavə sənədlər də tələb oluna bilər.
+
+            </p>
+        </div>
+    </div>
+</div>
+
